@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = axios.create({ baseURL: 'http://localhost:5000' });
+const API = axios.create({ baseURL: 'https://memoriesappjs.herokuapp.com/' });
 
 API.interceptors.request.use((req) => {   
     // This is going to trigger before all of the api requests below ( We're adding it for every single request )
